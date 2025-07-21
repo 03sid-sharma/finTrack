@@ -11,9 +11,14 @@ public class EnvConfig {
         return dotenv.get("DB_NAME");
     }
 
-    public String getJwtSecret() {
+    public String getJWTSecret() {
         return dotenv.get("JWT_SECRET");
     }
+
+    public String getJWTExpirationMs() {
+        return dotenv.get("JWT_EXPIRATION");
+    }
+
 
     // ... other getters
 }
