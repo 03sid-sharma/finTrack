@@ -22,7 +22,7 @@ public class User implements UserDetails {
     private String email;
 
     private String password;
-    private String role = "ROLE_USER";
+    private String role = "USER";
 
     @Override public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority(role));
